@@ -1,0 +1,10 @@
+extends: spectral:oas
+rules:
+  API has description: 
+    description: API must have a description
+    given: $.info
+    severity: error
+    then:
+      field: description
+      function: truthy
+    message: API must have an Info description
