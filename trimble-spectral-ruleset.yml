@@ -1,4 +1,4 @@
-extends: spectral:oas
+
 rules:
   API has description: 
     description: API must have a description
